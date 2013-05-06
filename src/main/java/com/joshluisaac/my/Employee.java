@@ -7,6 +7,9 @@ public class Employee {
 	String designation;
 	double salary;
 
+	// DEPARTMENT is a constant
+	public static final String DEPARTMENT = "Development ";
+
 	public Employee(String name) {
 		// TODO Auto-generated constructor stub
 		this.name = name;
@@ -43,6 +46,9 @@ public class Employee {
 		empOne.setDesignation("Senior Software Engineer");
 		empOne.setSalary(1000);
 		empOne.printEmployee();
+		System.out.println("Making Static Reference to a Static variable "  + Employee.DEPARTMENT); //static reference: access to a class (static) variable
+		System.out.println("Making Non Static Reference to a Non Static variable "  + empOne.salary); //non static reference: access to an instance (non static) variable
+		
 
 		empTwo.setAge(21);
 		empTwo.setDesignation("Software Engineer");
